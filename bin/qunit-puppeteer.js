@@ -93,7 +93,7 @@ const os = require('os');
   await page.goto(targetURL);
 
   await page.evaluate(() => {
-    QUnit.config.testTimeout = 10000;
+    QUnit.config.testTimeout = 20000;
 
     // Cannot pass the window.harness_blah methods directly, because they are
     // automatically defined as async methods, which QUnit does not support
